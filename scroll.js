@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		var scroll = function(timestamp) {
 			startTime = startTime || timestamp;
 			currentPos = document.body.scrollTop;
-
 			var elapsedTime = timestamp - startTime;
 			document.body.scrollTop = document.body.scrollTop + 10;
 			console.log(currentPos, endPos);
@@ -25,11 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			currentPos < endPos && requestAnimationFrame(scroll);
 		}
-		requestAnimationFrame(scroll);
-
-
-		
-		
+		requestAnimationFrame(scroll);	
 	}
 
 	for (i = 0, len = links.length; i < len; i++) {
