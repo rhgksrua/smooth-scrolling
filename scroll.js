@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			var elapsedTime = timestamp - startTime;
 			document.body.scrollTop = document.body.scrollTop + 10;
 			console.log(currentPos, endPos);
-			if (elapsedTime > duration) {
+			if ((window.innerHeight + document.body.scrollTop) >= document.body.offsetHeight) {
 				return false;
 			}
 			currentPos < endPos && requestAnimationFrame(scroll);
