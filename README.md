@@ -14,3 +14,5 @@ Clicking on One scrolls down to the target `<div>`.
 
 
 ### TODO
+
+* Only works if scrolled position is top of the page.
